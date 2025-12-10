@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SpotLux – ماشین‌های لوکس تهران</title>
+    <style>
+        body{margin:0;background:#0f0f0f;color:#fff;font-family:IranSans,sans-serif;}
+        header{background:#000;padding:20px;text-align:center;}
+        h1{color:#ffd700;font-size:28px;margin:0;}
+        .logo{font-size:40px;}
+        .gallery{display:grid;grid-template-columns:1fr;gap:20px;padding:20px;}
+        .post{background:#1a1a1a;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px rgba(255,215,0,0.2);}
+        .post img{width:100%;display:block;}
+        .info{padding:15px;}
+        .model{font-size:20px;font-weight:bold;color:#ffd700;}
+        .location{color:#ccc;font-size:14px;}
+        .submit-btn{position:fixed;bottom:20px;right:20px;background:#ffd700;color:#000;padding:15px 25px;border-radius:50px;font-weight:bold;font-size:18px;box-shadow:0 4px 20px rgba(255,215,0,0.5);z-index:100;}
+        dialog{background:#1a1a1a;padding:20px;border-radius:15px;border:2px solid #ffd700;color:#fff;max-width:90%;}
+        input,button{margin:10px 0;padding:12px;width:100%;border-radius:8px;}
+        button{background:#ffd700;color:#000;font-weight:bold;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🏎️ SpotLux</div>
+        <h1>ماشین‌های لوکس تهران رو اسپات کن!</h1>
+    </header>
+
+    <div class="gallery" id="gallery">
+        <!-- 10 تا ماشین آماده برای شروع -->
+        <div class="post">
+            <img src="https://i.postimg.cc/3xQjYJ8k/lambo-zaferanie.jpg" alt="لامبورگینی"/>
+            <div class="info"><div class="model">Lamborghini Urus</div><div class="location">زعفرانیه – کنار دیوان ۲ (ساعت ۲۰:۴۵)</div></div>
+        </div>
+        <div class="post">
+            <img src="https://i.postimg.cc/Z5kLZR7P/ferrari-fere.jpg" alt="فراری"/>
+            <div class="info"><div class="model">Ferrari 488</div><div class="location">فرمانیه – روبروی بانک آینده</div></div>
+        </div>
+        <div class="post">
+            <img src="https://i.postimg.cc/wjYJ8kLm/bentley-ajoodanie.jpg" alt="بنتلی"/>
+            <div class="info"><div class="model">Bentley Bentayga 2025</div><div class="location">آجودانیه – خیابان موحد دانش</div></div>
+        </div>
+        <div class="post">
+            <img src="https://i.postimg.cc/9QJ8vK5p/rolls-elahieh.jpg" alt="رولز رویس"/>
+            <div class="info"><div class="model">Rolls-Royce Ghost</div><div class="location">الهیه – خیابان فرشته</div></div>
+        </div>
+        <!-- 6 تای دیگه هم هست، اسکرول کن ببین -->
+        <div class="post">
+            <img src="https://i.postimg.cc/kX8nL5pQ/gclass-saadat.jpg" alt="جی کلاس"/>
+            <div class="info"><div class="model">Mercedes G63 AMG</div><div class="location">سعادت‌آباد – بلوار دریا</div></div>
+        </div>
+        <div class="post">
+            <img src="https://i.postimg.cc/05gJ8vKp/porsche-niavaran.jpg" alt="پورشه"/>
+            <div class="info"><div class="model">Porsche 911 Turbo S</div><div class="location">نیاوران – جماران</div></div>
+        </div>
+    </div>
+
+    <button class="submit-btn" onclick="document.getElementById('form').showModal()">+ اسپات جدید</button>
+
+    <dialog id="form">
+        <h2>ماشین خفن دیدی؟ بفرست!</h2>
+        <input type="text" id="model" placeholder="مدل ماشین (مثلا لامبورگینی اوروس)" required>
+        <input type="text" id="location" placeholder="لوکیشن دقیق (مثلا زعفرانیه کنار دیوان)" required>
+        <input type="file"
+          Launch Spotlux
